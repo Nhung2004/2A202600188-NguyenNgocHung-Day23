@@ -2,7 +2,7 @@
 
 ## 1. Team / student
 
-- Name: Nguyễn Ngọc Hưng
+- Name: Nguyen Ngoc Hung
 - Repo/commit: 2A202600188-NguyenNgocHung-Day23
 - Date: 2026-05-11
 
@@ -26,21 +26,29 @@ The graph implements a production-style LangGraph workflow:
 
 ## 4. Scenario results
 
-- **Total scenarios**: 7
+- **Total scenarios**: 15
 - **Success rate**: 100.00%
-- **Average nodes visited**: 19.71
-- **Total retries**: 12
-- **Total interrupts**: 6
+- **Average nodes visited**: 13.47
+- **Total retries**: 14
+- **Total interrupts**: 10
 
 | Scenario | Expected route | Actual route | Success | Retries | Interrupts |
 |---|---|---|---:|---:|---:|
-| S01_simple | simple | simple | True | 0 | 0 |
-| S02_tool | tool | tool | True | 0 | 0 |
-| S03_missing | missing_info | missing_info | True | 0 | 0 |
-| S04_risky | risky | risky | True | 0 | 3 |
-| S05_error | error | error | True | 9 | 0 |
-| S06_delete | risky | risky | True | 0 | 3 |
-| S07_dead_letter | error | error | True | 3 | 0 |
+| G01_simple | simple | simple | True | 0 | 0 |
+| G02_simple2 | simple | simple | True | 0 | 0 |
+| G03_tool | tool | tool | True | 0 | 0 |
+| G04_tool2 | tool | tool | True | 0 | 0 |
+| G05_tool3 | tool | tool | True | 0 | 0 |
+| G06_missing | missing_info | missing_info | True | 0 | 0 |
+| G07_missing2 | missing_info | missing_info | True | 0 | 0 |
+| G08_risky | risky | risky | True | 0 | 2 |
+| G09_risky2 | risky | risky | True | 0 | 2 |
+| G10_risky3 | risky | risky | True | 0 | 2 |
+| G11_risky4 | risky | risky | True | 0 | 2 |
+| G12_error | error | error | True | 6 | 0 |
+| G13_error2 | error | error | True | 6 | 0 |
+| G14_dead | error | error | True | 2 | 0 |
+| G15_mixed | risky | risky | True | 0 | 2 |
 
 
 ## 5. Failure analysis
